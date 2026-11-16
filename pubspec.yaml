@@ -1,0 +1,56 @@
+name: ezan_app
+description: Namaz vakitleri ve ezan bildirimleri uygulaması.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Namaz vakti hesaplama
+  adhan: ^2.1.1
+
+  # Konum servisi
+  geolocator: ^11.0.0
+  geocoding: ^3.0.0
+
+  # Bildirimler
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.4
+
+  # Ses
+  audioplayers: ^6.0.0
+
+  # Kıble
+  flutter_compass: ^0.7.0
+
+  # Durum yönetimi
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  permission_handler: ^11.3.1
+  intl: ^0.19.0
+  workmanager: ^0.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audio/
+    - assets/images/
+
+  fonts:
+    - family: Scheherazade
+      fonts:
+        - asset: assets/fonts/ScheherazadeNew-Regular.ttf
